@@ -1,0 +1,4 @@
+build/
+*.so
+pybind_example.egg-info/
+
