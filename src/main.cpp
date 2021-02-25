@@ -58,8 +58,8 @@ typedef xt::pyarray<double> Tensor ;
 
 void act_on_a_tensor(Tensor& v){
     for (int i = 0; i < v.shape(0); ++i) {
-        for (int j = 0; j < v.shape(0); ++j) {
-            for (int k = 0; k < v.shape(0); ++k ) {
+        for (int j = 0; j < v.shape(1); ++j) {
+            for (int k = 0; k < v.shape(2); ++k ) {
                 v(i, j, k) *= 2;
             }
         }
